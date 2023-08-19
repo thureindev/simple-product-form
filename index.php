@@ -77,14 +77,14 @@ if (isset($_POST['submit'])) {
 
         $stmt->execute();
     } catch (PDOException $e) {
-        echo "Error: " . $e->getMessage();
+        echo "<p>Error: " . $e->getMessage() . "</p>";
     }
 
     $conn = null;
     */
 
     // Hardcoded success message
-    echo "New product created successfully";
+    echo "<p>New product created successfully</p>";
 }
 
 ?>
